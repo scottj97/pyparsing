@@ -17,7 +17,7 @@ packages = [
     "pyparsing",
 ]
 
-pyparsing_version = "3.0.0.dev1"
+pyparsing_version = "3.0.0.dev1.aril"
 
 setup(  # Distribution meta-data
     name="pyparsing",
