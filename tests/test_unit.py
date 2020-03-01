@@ -8,6 +8,7 @@
 #
 
 import contextlib
+import copy
 import datetime
 import sys
 from io import StringIO
@@ -1242,6 +1243,7 @@ class Test2_WithoutPackrat(ppt.TestParseResultsAsserts, TestCase):
         )
 
         results = phrase.parseString("xavier yeti alpha beta charlie will beaver")
+        copy.deepcopy(results)
         print(results, results.Head, results.ABC, results.Tail)
         for key, ln in [("Head", 2), ("ABC", 3), ("Tail", 2)]:
             self.assertEqual(
